@@ -1,0 +1,19 @@
+{
+  "name": "react-placeholder-images",
+  "version": "1.0.0",
+  "description": "A dummy placeholder image generator based on Nodejs and React",
+  "main": "server.js",
+  "author": "Subroto Biswas",
+  "license": "MIT",
+  "engines": {
+    "node": "13.x"
+  },
+  "scripts": {
+    "start": "node server",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-html-to-image": "^3.0.1"
+  }
+}
