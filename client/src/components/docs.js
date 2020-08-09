@@ -7,7 +7,7 @@ const Docs = () => {
     "/150",
     "/350x150",
     "/111/blue",
-    "222/blue/red",
+    "/222/blue/red",
     "/555?text=hello+subroto",
   ]);
   return (
@@ -17,15 +17,14 @@ const Docs = () => {
           <div className="box-header">
             <span>Simple Example</span>
             <CopyToClipboard
-              text={`https://${url}
+              text={`https://${url}/images
             ${exampleItem}`}
             >
               <span className="material-icons">content_copy</span>
             </CopyToClipboard>
           </div>
           <div className="box-body">
-            https://{url}
-            {exampleItem}
+            https://{url}/images{exampleItem}
           </div>
         </div>
       ))}
